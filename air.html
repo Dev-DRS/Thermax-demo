@@ -73,18 +73,18 @@
         <p>This is the machine case of the air compressor. It houses the internal components, ensuring protection and durability.</p>
     </div>
 
-    <button class="view-button" slot="hotspot-0" data-position="-1m 3m 0m" data-normal="0m 0m -1m" data-orbit="-3m 3m 0m" data-target="-1.5m 4m 1.5m" style="display: block;" onclick="toggleInfoPanel()">
+    <button class="view-button" slot="hotspot-0" data-position="-1m 3m 0m" data-normal="0m 0m -1m" data-orbit="-3m 3m 0m" data-target="-1m 4m 1.8m" style="display: block;" onclick="toggleInfoPanel()">
         Machine Case
     </button>   
 
 
-     <button class="view-button" slot="hotspot-3" data-position="0m 3.25m 1m" data-normal="0m 0m -1m" data-orbit="-2m 4m -3m" data-target="-1m 3m 3m" style="display: block;" onclick="toggleInfoPanel_3()">
+     <button class="view-button" slot="hotspot-3" data-position="0m 3.25m 1m" data-normal="0m 0m -1m" data-orbit="-2m 4m -3m" data-target="-1m 4m 4m" style="display: block;" onclick="toggleInfoPanel_3()">
        Rotating Wheels    
     </button>  
     
     
     <div class="info-panel" id="info-panel_3" slot="hotspot-4" 
-    data-position="0m 3.25m 1m" 
+    data-position="0m 4m 1m" 
     data-normal="0m 0m 1m" 
     style="display: none;">
     <h3>Rotating Wheels</h3>
@@ -95,14 +95,14 @@
 <button class="view-button" slot="hotspot-2" 
 data-position="1m 3.5m 0m" 
 data-normal="0m 0m -1m" 
-data-orbit="-180.3926deg 90.45934deg 1m"
+data-orbit="-180.3926deg 90.45934deg .2m"
 data-target="1m 3m -3.5m" style="display: block;" 
 onclick="toggleInfoPanel_2()">
 Pressure Gauge
 </button>
 
 <div class="info-panel" id="info-panel_2" slot="hotspot-24" 
-data-position="1m 3.8m 0m" 
+data-position="2m 4m 0m" 
 data-normal="0m 0m -1m" 
 style="display: none;">
 <h3>Pressure Gauge</h3>
@@ -110,7 +110,14 @@ style="display: none;">
 </div>
 
 
-     
+<button class="view-button" slot="hotspot-223" 
+data-position="0m 0m 0m" 
+data-normal="0m 0m 0m"  
+data-orbit="-180deg 70.45934deg auto"
+style="display: block;" 
+onclick="Reset()">
+Reset
+</button>
 
   </model-viewer>
   

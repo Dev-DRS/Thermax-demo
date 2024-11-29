@@ -58,6 +58,7 @@ function closeAllSubMenus(){
 function LoadModelViewer(){
  print("neil") ;
 }
+
 function toggleInfoPanel() {
   const infoPanel = document.getElementById('info-panel');
   const infoPanel2 = document.getElementById('info-panel_2');
@@ -132,4 +133,14 @@ function toggleInfoPanel_9() {
     infoPanel.style.display = infoPanel.style.display === 'none' ? 'block' : 'none';
     infoPanel1.style.display='none';
     infoPanel2.style.display='none';
+}
+function Reset(){
+  modelViewer.cameraTarget = '1m 1m 1m';
+
+  // Reset the camera orbit (default angles and distance)
+  modelViewer.cameraOrbit = '180deg 90deg 1.5m';  // Adjust as needed
+  
+
+  console.log('Camera reset to default position and orbit.');
+
 }
