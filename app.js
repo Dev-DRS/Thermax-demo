@@ -7,6 +7,12 @@ const infoBox = document.getElementById('info-box');
 const infoText = document.getElementById('info-text');
 const hotspotButton = document.querySelector('[slot="hotspot-0"]');
 
+$("#hotspot-camera-view-demo").on("click", function() {
+  if (selectedOption === "4") {
+    $("#ar-buttons").fadeIn();
+  }
+});
+
 
 function toggleSidebar(){
   sidebar.classList.toggle('close')
@@ -134,7 +140,7 @@ function toggleInfoPanel_9() {
     infoPanel1.style.display='none';
     infoPanel2.style.display='none';
 }
-function Reset(){
+function Reset(infoPanelID1=null,infoPanelID2=null,infoPanelID3=null){
   modelViewer.cameraTarget = '1m 1m 1m';
 
   // Reset the camera orbit (default angles and distance)
@@ -142,5 +148,11 @@ function Reset(){
   
 
   console.log('Camera reset to default position and orbit.');
+  const infoPanel1 = document.getElementById(infoPanelID1);
+  infoPanel1.style.display = 'none';
+  const infoPanel2 = document.getElementById(infoPanelID2);
+  infoPanel2.style.display = 'none';
+  const infoPanel3 = document.getElementById(infoPanelID3);
+  infoPanel3.style.display = 'none';
 
 }

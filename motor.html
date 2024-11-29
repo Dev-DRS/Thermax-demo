@@ -64,7 +64,9 @@
   </nav>
 
  <model-viewer id="hotspot-camera-view-demo" src="./assets/models/Motorcycle_Engine_v1.glb" alt="Thor and the Midgard Serpent" camera-controls enable-pan touch-action="none" camera-orbit="180deg 70.11deg auto" camera-target="0m 0m 1m" field-of-view="45deg" min-field-of-view="45deg" max-field-of-view="45deg" interpolation-decay="200" min-camera-orbit="auto auto 5%" poster="../../assets/SketchfabModels/ThorAndTheMidgardSerpent.webp" ar ar-modes="webxr scene-viewer quick-look">
-
+  <button slot="ar-button" id="ar-button">
+    View in your space
+  </button>
  <button class="view-button" slot="hotspot-9" data-position="0m 1m 0m" data-normal="0m 0m -1m" data-orbit="-160.3926deg 90.45934deg 0.5m" data-target="0m 1m -1m"  onclick="toggleInfoPanel_7()">
   Fuel Tank
 </button> 
@@ -106,7 +108,7 @@ data-position="0m 0m 0m"
 data-normal="0m 0m 0m"  
 data-orbit="-180deg 70.45934deg auto"
 style="display: block;" 
-onclick="Reset()">
+onclick="Reset('info-panel_7','info-panel_8','info-panel_9')">
 Reset
 </button>
 
