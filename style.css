@@ -34,7 +34,7 @@ body{
 
 .letsgo{
   position: absolute; /* Positions the button over the image */
-  bottom: 1%; /* Center vertically */
+  bottom: 12%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust to align perfectly at the center */
   background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent red */
@@ -52,14 +52,14 @@ body{
 
 .energy{
   position: absolute; /* Positions the button over the image */
-  top: 39%; /* Center vertically */
+  top: 33%; /* Center vertically */
   left: 45%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust to align perfectly at the center */
   background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent red */
   color: #fff; /* White text */
   border: none; /* Removes default border */
   border-radius: 500px; /* Rounded edges */
-  padding: 100px 100px; /* Adjust size */
+  padding: 110px 110px; /* Adjust size */
   font-size: 28px; /* Text size */
   font-weight: bold; /* Makes text bold */
   text-transform: uppercase; /* Uppercase text */
